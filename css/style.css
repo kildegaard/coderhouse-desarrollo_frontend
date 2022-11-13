@@ -6,6 +6,14 @@
 
 body {
     background-color: #b5c1e0;
+    background-image: url('../assets/img/background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    opacity: 0.95;
+
+    width: 90%;
+    margin: 0 auto;
 }
 
 a:visited {
@@ -14,14 +22,18 @@ a:visited {
 
 .texto-destacado {
     font-family: 'Freehand', cursive;
-    font-size: 2rem;
+    font-size: 3.5em;
+    color: #FFF;
+    text-shadow: 3px 3px #7695e2;
+    -webkit-text-stroke: 1px #4e4e4e;
+    -webkit-text-fill-color: #fff;
 }
 
 .titulo-seccion {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 2rem;
+    font-size: 2em;
     text-align: center;
-    letter-spacing: 1.25rem;
+    letter-spacing: 1.25em;
     color: rgba(57, 88, 166, 1);
     text-shadow: 2px 2px 2px #E64E76;
     margin-bottom: 15px;
@@ -29,13 +41,15 @@ a:visited {
 
 .titulo-articulo {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 1.35rem;
+    font-size: 1.35em;
     text-decoration: underline;
 }
 
 nav .nav-seleccion {
-    color: rgb(30, 66, 158);
-    font-weight: bold;
+    /* color: rgb(30, 66, 158); */
+    font-size: 1.8em;
+    -webkit-text-stroke: 0.5px whitesmoke;
+    -webkit-text-fill-color: #E64E76;
 }
 
 /* ########## INICIO HEADER ########## */
@@ -49,10 +63,10 @@ header {
 
     background-color: rgba(57, 88, 166, 0.8);
 
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    width: 100%;
-    height: 100px;
+    width: 100%; */
+    height: 130px;
 }
 
 header nav {
@@ -61,26 +75,29 @@ header nav {
 
 header h1 {
     font-family: 'Titillium Web', sans-serif;
-    font-size: 3rem;
+    font-size: 3em;
     text-align: center;
+    margin-left: 30px;
 }
 
 header ul {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
 
 header ul li {
     list-style-type: none;
     color: whitesmoke;
     margin: 0px 2px;
+    text-align: center;
 }
 
 header ul li a {
     text-decoration: none;
     font-family: 'Titillium Web', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5em;
     opacity: 0.8;
 }
 
@@ -98,18 +115,19 @@ header ul li a:active {
 /* ########## INICIO MAIN DE INDEX.HTML ########## */
 
 main {
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin: 40px auto;
 }
 
 #index-hero {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+}
 
-    margin-top: 10%;
-    margin-bottom: 10%;
+#index-hero h2 {
+    text-align: center;
+    margin: 0 10px;
 }
 
 #index-hero img {
@@ -121,12 +139,17 @@ main {
     display: flex;
     flex-direction: row;
 
+    height: 350px;
+    min-width: 600px;
+
     padding: 20px 80px;
 
     border: 2px solid black;
     margin: 20px;
     background-color: #ecbfcb;
     background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+
+    overflow: scroll;
 }
 
 .articulo-noticia-img {
@@ -159,9 +182,9 @@ main {
 /* ########## INICIO FOOTER ########## */
 
 footer {
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100%; */
     height: 50px;
 
     display: flex;
@@ -169,6 +192,7 @@ footer {
 
     justify-content: space-between;
     align-items: center;
+    text-align: center;
 
     background-color: rgba(57, 88, 166, 0.8);
 
@@ -238,7 +262,7 @@ footer ul li {
 .horarios-card p {
     text-align: center;
     margin-top: 10px;
-    font-size: 2rem;
+    font-size: 2em;
 }
 
 .horarios-card ul {
@@ -405,7 +429,7 @@ footer ul li {
 
 #contacto-formulario ul {
     list-style-type: none;
-    line-height: 1.3rem;
+    line-height: 1.3em;
 }
 
 #contacto-disclaimer {
@@ -418,3 +442,130 @@ footer ul li {
 
 /* ############################################################## */
 /* contacto.html */
+
+
+
+
+/* APLICANDO GRID */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+
+    grid-template-areas:
+        "header"
+        "main"
+        "footer"
+    ;
+}
+
+.index__header {
+    grid-area: header;
+}
+
+.index__main {
+    grid-area: main;
+}
+
+.index__footer {
+    grid-area: footer;
+}
+
+/* ### VERSION TABLET ### */
+
+@media screen and (max-width: 1000px) and (min-width: 768px) {
+    body {
+        width: 100%;
+        margin: auto;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    #index-hero img {
+        border-radius: 10px;
+    }
+
+    #index-hero h2 {
+        display: none;
+    }
+
+    .articulo-noticia-izq {
+        margin: 20px 0;
+    }
+
+    .articulo-noticia-der {
+        margin: 20px 0;
+    }
+
+}
+
+/* ### VERSION MOBILE ### */
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: auto;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    #index-hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #index-hero img {
+        border-radius: 10px;
+    }
+
+    #index-hero h2 {
+        display: none;
+    }
+
+    .titulo-seccion {
+        margin: 50px auto;
+        background-color: #FFFFFF55;
+        border-radius: 30px;
+        padding: 10px;
+    }
+
+    .articulo-noticia {
+        display: flex;
+        flex-direction: column;
+
+        height: 400px;
+        min-width: 400px;
+
+        border: 1px solid rgba(148, 187, 233, 0.5);
+        border-radius: 30px;
+        background: scroll;
+        background-color: rgba(118, 149, 226, 0.8);
+
+        padding: 15px;
+        margin: 50px;
+    }
+
+    .articulo-noticia div {
+        align-items: center;
+        text-align: justify;
+    }
+
+    .articulo-noticia img {
+        object-fit: contain;
+    }
+
+}
