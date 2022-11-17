@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/jpg" href="../assets/img/favicon.png" />
-    <!-- CSS link -->
+    <title>Gimnasio Cerini</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/jpg" href="./assets/img/favicon.png" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Mi propio CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Google Fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,22 +19,48 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Freehand&family=Titillium+Web:ital,wght@0,400;0,600;1,400&display=swap"
         rel="stylesheet">
-    <title>GIMNASIO CERINI - Horarios</title>
 </head>
 
 <body>
-    <header>
-        <h1>GIMNASIO CERINI</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a class="nav-seleccion" href="#">Horarios</a></li>
-                <li><a href="./suplementos.html">Suplementos</a></li>
-                <li><a href="./about-us.html">Sobre nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fs-1" href="#">Gimnasio
+                    Cerini <img class="navbar-brand__icon" src="../assets/img/favicon.png"
+                        alt="Icono de una mancuerna"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse navbarSupportedContent-custom" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-4">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <div class="vr"></div>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Horarios</a>
+                        </li>
+                        <div class="vr"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./suplementos.html">Suplementos</a>
+                        </li>
+                        <div class="vr"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about-us.html">Sobre Nosotros</a>
+                        </li>
+                        <div class="vr"></div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        <audio id="audio" src="../assets/audio/musica_fondo.mp3" autoplay></audio>
     </header>
 
     <main>
@@ -241,15 +272,14 @@
         </section>
     </main>
 
-    <footer>
-        <p>amaterasuDev® - todos los derechos reservados</p>
+    <footer class="footer">
+        <p class="footer__rights">2022 - amaterasuDev® - todos los derechos reservados</p>
         <small>Made with ❤ by Gus</small>
-        <ul>
+        <ul class="footer__ul">
             <li>
                 <a href="https://www.facebook.com/profile.php?id=100069750592245" target="_blank">
                     <img src="../assets/img/facebook_48.png" alt="Facebook" height="30px">
                 </a>
-
             </li>
             <li>
                 <a href="https://www.instagram.com/cerinigimnasio/" target="_blank">
@@ -260,15 +290,9 @@
                 <a href="https://twitter.com/" target="_blank">
                     <img src="../assets/img/twitter_48.png" alt="Twitter" height="30px">
                 </a>
-
             </li>
         </ul>
     </footer>
-
-    <script>
-        var audio = document.getElementById("audio");
-        audio.volume = 0.3;
-    </script>
 </body>
 
 </html>
