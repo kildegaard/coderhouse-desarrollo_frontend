@@ -1,213 +1,61 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    background-color: #b5c1e0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: lightblue;
     background-image: url('../assets/img/background-image.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: left;
-    opacity: 0.95;
-
-    width: 90%;
-    margin: 0 auto;
+    background-repeat: repeat;
 }
 
-a:visited {
-    color: whitesmoke;
+.btn-primary {
+    background-color: #E64E76;
 }
 
-.texto-destacado {
-    font-family: 'Freehand', cursive;
-    font-size: 3.5em;
-    color: #FFF;
-    text-shadow: 3px 3px #7695e2;
-    -webkit-text-stroke: 1px #4e4e4e;
-    -webkit-text-fill-color: #fff;
+.btn-primary:hover {
+    background-color: #3958a6;
 }
 
-.titulo-seccion {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 2em;
-    text-align: center;
-    letter-spacing: 1.25em;
-    color: rgba(57, 88, 166, 1);
-    text-shadow: 2px 2px 2px #E64E76;
-    margin-bottom: 15px;
-}
-
-.titulo-articulo {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.35em;
-    text-decoration: underline;
-}
-
-nav .nav-seleccion {
-    /* color: rgb(30, 66, 158); */
-    font-size: 1.8em;
-    -webkit-text-stroke: 0.5px whitesmoke;
-    -webkit-text-fill-color: #E64E76;
-}
-
-/* ########## INICIO HEADER ########## */
-
-header {
-    display: flex;
-    flex-direction: row;
-
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: rgba(57, 88, 166, 0.8);
-
-    /* position: fixed;
-    top: 0;
-    width: 100%; */
-    height: 130px;
-}
-
-header nav {
-    width: 60%;
-}
-
-header h1 {
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 3em;
-    text-align: center;
-    margin-left: 30px;
-}
-
-header ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-header ul li {
-    list-style-type: none;
-    color: whitesmoke;
-    margin: 0px 2px;
+/* ####################### HEADER ############################# */
+.navbarSupportedContent-custom {
     text-align: center;
 }
 
-header ul li a {
-    text-decoration: none;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 1.5em;
-    opacity: 0.8;
+.navbar {
+    background-color: #3958a6cc;
 }
 
-header ul li a:hover {
-    opacity: 1;
+.navbar-brand__icon {
+    height: 40px;
+    transform: rotate(45deg);
 }
 
-header ul li a:active {
-    color: #E64E76;
-}
+/* ####################### HEADER ############################# */
 
-/* ########## FIN HEADER ########## */
-
-
-/* ########## INICIO MAIN DE INDEX.HTML ########## */
-
-main {
-    margin: 40px auto;
-}
-
-#index-hero {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#index-hero h2 {
-    text-align: center;
-    margin: 0 10px;
-}
-
-#index-hero img {
-    height: 450px;
-    border-radius: 50%;
-}
-
-.articulo-noticia {
-    display: flex;
-    flex-direction: row;
-
-    height: 350px;
-    min-width: 600px;
-
-    padding: 20px 80px;
-
-    border: 2px solid black;
-    margin: 20px;
-    background-color: #ecbfcb;
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
-
-    overflow: scroll;
-}
-
-.articulo-noticia-img {
-    height: 300px;
-    margin: 0 30px;
-
-}
-
-.articulo-noticia-izq {
-    margin-right: 25%;
-}
-
-.articulo-noticia-der {
-    flex-direction: row-reverse;
-    margin-left: 25%;
-}
-
-.articulo-noticia div {
-    display: flex;
-    flex-direction: column;
-
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-
-/* ########## FIN MAIN ########## */
-
-
-/* ########## INICIO FOOTER ########## */
-
-footer {
+/* ####################### FOOTER ############################# */
+.footer {
     /* position: fixed;
     bottom: 0;
-    width: 100%; */
-    height: 50px;
+    width: 100%;
+    height: 50px; */
 
     display: flex;
     flex-direction: row;
-
     justify-content: space-between;
     align-items: center;
     text-align: center;
-
-    background-color: rgba(57, 88, 166, 0.8);
-
+    background-color: #3958a6cc;
     font-family: 'Titillium Web', sans-serif;
 }
 
-footer p {
-    margin-left: 10px;
+.footer__rights {
     font-style: italic;
+    margin: 0;
 }
 
-footer ul {
+.footer__ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin-top: 15px;
 }
 
 footer ul li {
@@ -215,357 +63,395 @@ footer ul li {
     margin: 2px 10px;
 }
 
-/* ########## FIN FOOTER ########## */
+/* ####################### FOOTER ############################# */
 
-/* ############################################################## */
-/* Horarios.html */
-
-#horarios-tabla {
-    display: flex;
-    flex-direction: column;
-    margin: 0 15%;
+/* ####################### INDEX.HTML ############################# */
+.index__hero {
+    margin: 100px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-#horarios-aranceles {
-    display: flex;
-    flex-direction: column;
+.hero__img {
+    max-height: 500px;
+    max-width: 500px;
+    border-radius: 50%;
 }
 
-.horarios-cards {
-    display: flex;
-    flex-direction: row;
+.hero__text {
+    font-size: 3em;
+}
 
+.section__title {
+    font-size: 3em;
+    text-align: center;
+    margin: 20px;
+    letter-spacing: 0.8em;
+    border-top: 2px solid #3958a6;
+    border-bottom: 2px solid #3958a6;
+}
+
+.index__articles {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.horarios-card {
-    display: flex;
-    flex-direction: column;
-
-    background-color: #e64e77b7;
-    box-shadow: 5px 5px 5px rgba(57, 88, 166, 1);
-
-    border: 2px solid #E64E76;
-    border-radius: 20px;
-    padding: 1%;
+.index-article {
+    max-width: 540px;
 }
 
-.horarios-card img {
-    object-fit: cover;
+.index-article .card-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.card-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ####################### INDEX.HTML ############################# */
+
+
+/* ####################### HORARIOS.HTML ############################# */
+.horarios__tabla table {
+    opacity: 0.9;
+    text-align: center;
+}
+
+.horarios__tabla table tr:first-child {
+    font-size: 1.25em;
+}
+
+
+.horarios__aranceles .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+/* Cards */
+.horarios__aranceles .container .card {
     width: 250px;
-    height: 250px;
-
-    border-radius: 20px;
+    background-color: #3958a6b3;
+    align-items: center;
 }
 
-.horarios-card p {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 2em;
+.horarios__aranceles .card__img {
+
+    border-radius: 25px;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
 }
 
-.horarios-card ul {
-    list-style-type: square;
-    margin: 10px 0 10px 25px;
-}
-
-.horarios-card button {
-    height: 30px;
-    border-radius: 30px;
-    margin: 0 15%;
-    text-align: center;
-
-}
-
-#horarios-otrasopciones {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-
-    margin: 80px 200px;
-    border: 2px solid rgba(57, 88, 166, 0.8);
-    border-radius: 20px;
-    padding: 10px;
-    background-color: rgba(57, 88, 166, 0.2);
-    box-shadow: 5px 5px 5px #e64e77b7;
-}
-
-#horarios-otrasopciones ul {
-    margin-left: 30px;
-}
-
-/* Horarios.html */
-/* ############################################################## */
-
-
-/* Suplementos.html */
-/* ############################################################## */
-
-#suplementos-hero {
-    margin: 20px;
-    margin-top: 125px;
-
-    border: 2px solid rgba(57, 88, 166, 0.8);
-    border-radius: 20px;
-    padding: 10px;
-    background-color: rgba(57, 88, 166, 0.2);
-    box-shadow: 5px 5px 5px #e64e77b7;
-}
-
-#suplementos-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 50px 200px;
-
-    justify-content: flex-start;
-}
-
-#suplementos-cards .horarios-card {
-    margin: 20px;
-}
-
-/* ############################################################## */
-/* Suplementos.html */
-
-
-/* about-us.html */
-/* ############################################################## */
-
-#aboutus-hero {
-    display: flex;
-    justify-content: center;
-    height: 400px;
-    margin-top: 120px;
-    margin-bottom: 50px;
-}
-
-#aboutus-hero img {
-    object-fit: cover;
-    width: 1400px;
-}
-
-#aboutus-instalaciones {
+.horarios__aranceles .card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#aboutus-entrenadores {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.horarios__aranceles .card-body .card-title {
+    font-weight: bold;
 }
 
-.aboutus-entrenadores {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 0 150px;
+.horarios__aranceles .card-body .card-text {
+    text-align: center;
 }
 
-.aboutus-entrenador {
-    display: flex;
-    flex-direction: row;
 
-    background-color: #479ed8b7;
-    box-shadow: 5px 5px 5px rgba(57, 88, 166, 1);
-
-    border: 2px solid #E64E76;
+.horarios__otrasopciones li {
+    margin-bottom: 5px;
+    border: 1px solid #E64E76;
     border-radius: 20px;
-
-    padding: 20px;
-    margin: 10px 0;
-}
-
-.aboutus-entrenador img {
-    height: 200px;
-    border: 3px solid #E64E76;
-    border-radius: 20px;
-    margin-right: 70px;
-}
-
-.aboutus-entrenador div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-/* ############################################################## */
-/* about-us.html */
-
-
-/* contacto.html */
-/* ############################################################## */
-
-#contacto-formulario {
-    display: flex;
-    flex-direction: column;
-}
-
-#contacto-formulario>div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#contacto-formulario>div form {
-    width: 550px;
-    margin-right: 50px;
-}
-
-#contacto-formulario>div>div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#contacto-formulario iframe {
-    width: 500px;
-    height: 200px;
-    margin-bottom: 10px;
-}
-
-#contacto-formulario ul {
+    text-align: center;
+    font-size: 1.5rem;
     list-style-type: none;
-    line-height: 1.3em;
+    list-style-position: inside;
+    transition: all 0.4s ease;
 }
 
-#contacto-disclaimer {
-    margin: 50px;
-    padding: 5px;
-    border: 1px solid red;
+.horarios__otrasopciones li:hover {
+    color: whitesmoke;
+    background-color: #E64E76;
+    transition: all 0.4s ease;
+}
+
+/* ####################### HORARIOS.HTML ############################# */
+
+
+/* ####################### SUPLEMENTOS.HTML ############################# */
+.suplementos__hero__text {
+    text-align: center;
+    font-size: 1.3em;
+    margin: 2% 10%;
+}
+
+.suplementos__hero .carousel-item {
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    background-color: #3958a6b3;
+    border-radius: 50px;
+}
+
+.suplementos__hero .carousel-item img {
+    padding: 10px;
+    border: 5px solid #3958a6;
+    border-radius: 50px;
+}
+
+.suplementos__productos .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 20px;
+    margin: 50px auto;
+}
+
+/* Cards */
+.suplementos__productos .container .card {
+    width: 250px;
+    background-color: #3958a6b3;
+    align-items: center;
+}
+
+.suplementos__productos .card__img {
+
+    border-radius: 25px;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+}
+
+.suplementos__productos .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.suplementos__productos .card-body .card-title {
+    font-weight: bold;
+}
+
+.suplementos__productos .card-body .card-text {
+    text-align: center;
+}
+
+/* ####################### SUPLEMENTOS.HTML ############################# */
+
+
+/* ####################### ABOUT-US.HTML ############################# */
+.aboutus__historia .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.aboutus__entrenadores {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin: 0 10%;
+}
+
+.aboutus__entrenador {
+    border: 1px solid #E64E76;
     border-radius: 20px;
-    background-color: rgba(230, 78, 118, 0.2);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    background-color: #3958a6cc;
 }
 
-/* ############################################################## */
-/* contacto.html */
-
-
-
-
-/* APLICANDO GRID */
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto);
-    gap: 10px;
-
-    grid-template-areas:
-        "header"
-        "main"
-        "footer"
-    ;
+.entrenador__img {
+    height: 150px;
+    padding: 5px;
+    border: 1px solid #E64E76;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(230, 78, 118, 0.3);
 }
 
-.index__header {
-    grid-area: header;
+.entrenador__datos {
+    padding: 0;
 }
 
-.index__main {
-    grid-area: main;
+.entrenador__datos li {
+    list-style-type: none;
+    list-style-position: inside;
 }
 
-.index__footer {
-    grid-area: footer;
+.entrenador__texto {
+    height: 150px;
+    border: 1px solid #E64E76;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* ### VERSION TABLET ### */
-
-@media screen and (max-width: 1000px) and (min-width: 768px) {
-    body {
-        width: 100%;
-        margin: auto;
-    }
-
-    header h1 {
-        display: none;
-    }
-
-    header nav {
-        width: 100%;
-    }
-
-    #index-hero img {
-        border-radius: 10px;
-    }
-
-    #index-hero h2 {
-        display: none;
-    }
-
-    .articulo-noticia-izq {
-        margin: 20px 0;
-    }
-
-    .articulo-noticia-der {
-        margin: 20px 0;
-    }
-
+.entrenador__nombre {
+    text-align: center;
 }
 
-/* ### VERSION MOBILE ### */
+/* ####################### ABOUT-US.HTML ############################# */
 
+/* ####################### CONTACTO.HTML ############################# */
+.contacto__items .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contacto__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 3px solid #3958a6;
+    border-radius: 20px;
+
+    background-color: rgba(57, 88, 166, 0.6);
+    color: antiquewhite;
+
+    margin: 5px;
+    padding: 10px;
+}
+
+.form__field--col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.form__field--row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.contacto__iframe-datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto__iframe {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+}
+
+.contacto__datos {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contacto__iframe-datos .section__title {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+}
+
+.contacto__datos li {
+    list-style-type: none;
+}
+
+.contacto__disclaimer {
+    text-align: center;
+    margin: 10px;
+}
+
+/* ####################### CONTACTO.HTML ############################# */
+
+
+/* ####################### MEDIA QUERIES ############################# */
 @media screen and (max-width: 768px) {
-    body {
-        width: 100%;
-        margin: auto;
-    }
-
-    header h1 {
+    .header .vr {
         display: none;
     }
 
-    header nav {
-        width: 100%;
-    }
-
-    #index-hero {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #index-hero img {
-        border-radius: 10px;
-    }
-
-    #index-hero h2 {
+    .hero__text {
         display: none;
     }
 
-    .titulo-seccion {
-        margin: 50px auto;
-        background-color: #FFFFFF55;
-        border-radius: 30px;
-        padding: 10px;
+    .hero__img {
+        width: 300px;
+        margin-bottom: 0;
     }
 
-    .articulo-noticia {
+    .section__title {
+        font-size: 2em;
+        letter-spacing: 0.3em;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .horarios__tabla table {
+        font-size: 0.45em;
+    }
+
+    .horarios__aranceles .container {
         display: flex;
         flex-direction: column;
-
-        height: 400px;
-        min-width: 400px;
-
-        border: 1px solid rgba(148, 187, 233, 0.5);
-        border-radius: 30px;
-        background: scroll;
-        background-color: rgba(118, 149, 226, 0.8);
-
-        padding: 15px;
-        margin: 50px;
-    }
-
-    .articulo-noticia div {
         align-items: center;
-        text-align: justify;
     }
 
-    .articulo-noticia img {
-        object-fit: contain;
+    .entrenador__texto {
+        font-size: 0.8em;
+        line-height: 0.9em;
     }
 
+    .contacto__items .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .contacto__iframe {
+        height: 300px;
+        width: 300px;
+    }
+
+    #consulta-texto {
+        width: 300px;
+    }
 }
+
+/* ####################### MEDIA QUERIES ############################# */
