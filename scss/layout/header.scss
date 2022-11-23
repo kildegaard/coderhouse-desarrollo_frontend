@@ -1,0 +1,13 @@
+/* header */
+.navbarSupportedContent-custom {
+    text-align: center;
+}
+
+.navbar {
+    background-color: $color-primary;
+}
+
+.navbar-brand__icon {
+    height: 40px;
+    transform: rotate(45deg);
+}
