@@ -1,1 +1,49 @@
 /* Index */
+.index__hero {
+    margin: 100px 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero__img {
+    max-height: 500px;
+    max-width: 500px;
+    border-radius: 50%;
+}
+
+.hero__text {
+    font-size: 3em;
+}
+
+.section__title {
+    font-size: 3em;
+    text-align: center;
+    margin: 20px;
+    letter-spacing: 0.8em;
+    border-top: 2px solid #3958a6;
+    border-bottom: 2px solid #3958a6;
+}
+
+.index__articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.index-article {
+    max-width: 540px;
+}
+
+.index-article .card-title {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.card-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

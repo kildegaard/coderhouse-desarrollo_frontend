@@ -1,0 +1,73 @@
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .header .vr {
+        display: none;
+    }
+
+    .hero__text {
+        display: none;
+    }
+
+    .hero__img {
+        width: 300px;
+        margin-bottom: 0;
+    }
+
+    .section__title {
+        font-size: 1.8em;
+        letter-spacing: 0.3em;
+        color: #3958a6b3;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .horarios__tabla table {
+        font-size: 0.45em;
+    }
+
+    .horarios__aranceles .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .horarios__otrasopciones ul {
+        padding: 10px;
+    }
+
+    .horarios__otrasopciones li {
+        font-size: 1.2em;
+    }
+
+    .entrenador__texto {
+        font-size: 0.8em;
+        line-height: 0.9em;
+        color: antiquewhite;
+    }
+
+    .contacto__items .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .contacto__iframe {
+        height: 300px;
+        width: 300px;
+    }
+
+    #consulta-texto {
+        width: 300px;
+    }
+
+    .suplementos__hero__text,
+    .contacto__datos,
+    .disclaimer__text {
+        color: antiquewhite;
+        background-color: #3958a6b3;
+        border-radius: 20px;
+    }
+}

@@ -1,6 +1,17 @@
 // Utilities
 @import './utilities/variables.scss';
+@import './utilities/mixins.scss';
+
+// Base
+@import './base/reset.scss';
 
 // Layout
 @import './layout/header.scss';
 @import './layout/footer.scss';
+
+// Views
+@import './views/index.scss';
+@import './views/horarios.scss';
+@import './views/suplementos.scss';
+@import './views/about-us.scss';
+@import './views/contacto.scss';
