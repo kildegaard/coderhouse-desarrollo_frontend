@@ -66,8 +66,8 @@ body {
   text-align: center;
   margin: 20px;
   letter-spacing: 0.8em;
-  border-top: 2px solid #3958a6;
-  border-bottom: 2px solid #3958a6; }
+  border-top: 2px solid #3958a6cc;
+  border-bottom: 2px solid #3958a6cc; }
 
 .index__articles {
   display: flex;
@@ -77,10 +77,9 @@ body {
 
 .index-article {
   max-width: 540px; }
-
-.index-article .card-title {
-  text-align: center;
-  text-decoration: underline; }
+  .index-article .card-title {
+    text-align: center;
+    text-decoration: underline; }
 
 .card-image-container {
   display: flex;
@@ -91,9 +90,8 @@ body {
 .horarios__tabla table {
   opacity: 0.9;
   text-align: center; }
-
-.horarios__tabla table tr:first-child {
-  font-size: 1.25em; }
+  .horarios__tabla table:first-child {
+    font-size: 1.25em; }
 
 .horarios__aranceles .container {
   display: flex;
@@ -105,11 +103,12 @@ body {
 /* Cards */
 .horarios__aranceles .container .card {
   width: 250px;
-  background-color: #3958a6b3;
-  align-items: center; }
+  background-color: #3958a6cc;
+  align-items: center;
+  border-radius: 20px; }
 
 .horarios__aranceles .card__img {
-  border-radius: 25px;
+  border-radius: 20px;
   height: 200px;
   width: 200px;
   margin: 15px; }
@@ -134,11 +133,10 @@ body {
   list-style-type: none;
   list-style-position: inside;
   transition: all 0.4s ease; }
-
-.horarios__otrasopciones li:hover {
-  color: whitesmoke;
-  background-color: #E64E76cc;
-  transition: all 0.4s ease; }
+  .horarios__otrasopciones li:hover {
+    color: antiquewhite;
+    background-color: #E64E76cc;
+    transition: all 0.4s ease; }
 
 /* Suplementos */
 .suplementos__hero__text {
@@ -262,6 +260,21 @@ body {
   color: antiquewhite;
   margin: 5px;
   padding: 10px; }
+  .contacto__form .fieldset__text {
+    width: 100%; }
+    .contacto__form .fieldset__text input {
+      width: 100%;
+      border-radius: 10px; }
+  .contacto__form .form__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: antiquewhite; }
+
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px; }
 
 .form__field--col {
   display: flex;
@@ -297,14 +310,13 @@ body {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px; }
+  .contacto__datos li {
+    list-style-type: none; }
 
 .contacto__iframe-datos .section__title {
   font-size: 2em;
   font-weight: bold;
   letter-spacing: 0.5em; }
-
-.contacto__datos li {
-  list-style-type: none; }
 
 .contacto__disclaimer {
   text-align: center;
@@ -339,6 +351,8 @@ body {
     font-size: 0.8em;
     line-height: 0.9em;
     color: antiquewhite; }
+  .contacto__form {
+    border-radius: 0; }
   .contacto__items .container {
     flex-direction: column;
     justify-content: flex-start;

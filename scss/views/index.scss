@@ -21,8 +21,8 @@
     text-align: center;
     margin: 20px;
     letter-spacing: 0.8em;
-    border-top: 2px solid #3958a6;
-    border-bottom: 2px solid #3958a6;
+    border-top: 2px solid $color-primary;
+    border-bottom: 2px solid $color-primary;
 }
 
 .index__articles {
@@ -34,13 +34,12 @@
 
 .index-article {
     max-width: 540px;
-}
 
-.index-article .card-title {
-    text-align: center;
-    text-decoration: underline;
+    .card-title {
+        text-align: center;
+        text-decoration: underline;
+    }
 }
-
 
 .card-image-container {
     display: flex;

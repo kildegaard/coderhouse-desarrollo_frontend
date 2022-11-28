@@ -47,6 +47,10 @@
         color: $color-tertiary;
     }
 
+    .contacto__form {
+        border-radius: 0;
+    }
+
     .contacto__items .container {
         flex-direction: column;
         justify-content: flex-start;
