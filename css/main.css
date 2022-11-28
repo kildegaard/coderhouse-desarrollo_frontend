@@ -95,8 +95,6 @@ body {
 .horarios__tabla table {
   opacity: 0.9;
   text-align: center; }
-  .horarios__tabla table:first-child {
-    font-size: 1.25em; }
 
 .horarios__aranceles .container {
   display: flex;
@@ -185,6 +183,7 @@ body {
 .suplementos__productos .card-body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center; }
 
 .suplementos__productos .card-body .card-title {
@@ -197,14 +196,15 @@ body {
 .aboutus__historia .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px; }
 
 .aboutus__entrenadores {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 20px;
   margin: 0 10%; }
 
@@ -225,7 +225,7 @@ body {
   border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: rgba(230, 78, 118, 0.3); }
+  background-color: #E64E76cc; }
 
 .entrenador__datos {
   padding: 0; }

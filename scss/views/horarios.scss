@@ -2,11 +2,8 @@
 .horarios__tabla table {
     opacity: 0.9;
     text-align: center;
-
-    &:first-child {
-        font-size: 1.25em;
-    }
 }
+
 
 .horarios__aranceles .container {
     display: flex;

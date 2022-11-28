@@ -28,6 +28,7 @@
     }
 
     .horarios__aranceles .container {
+        // @include applyFlex(column, true);
         display: flex;
         flex-direction: column;
         align-items: center;

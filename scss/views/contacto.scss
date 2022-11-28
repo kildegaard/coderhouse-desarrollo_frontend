@@ -1,14 +1,16 @@
 /* Contacto */
 .contacto__items .container {
-    display: flex;
-    flex-direction: row;
+    @include applyFlex(row, false);
+    // display: flex;
+    // flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .contacto__form {
-    display: flex;
-    flex-direction: column;
+    @include applyFlex(column, false);
+    // display: flex;
+    // flex-direction: column;
     align-items: flex-start;
     border: 3px solid $color-primary--darker;
     border-radius: 20px;
@@ -44,24 +46,27 @@ textarea {
 }
 
 .form__field--col {
-    display: flex;
-    flex-direction: column;
+    @include applyFlex(column, false);
+    // display: flex;
+    // flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
 }
 
 .form__field--row {
-    display: flex;
-    flex-direction: row;
+    @include applyFlex(row, false);
+    // display: flex;
+    // flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
 }
 
 .contacto__iframe-datos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include applyFlex(column, true);
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
 }
 
 .contacto__iframe {
@@ -75,10 +80,11 @@ textarea {
     text-align: center;
     font-weight: bold;
     margin-top: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include applyFlex(row, true);
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
     flex-wrap: wrap;
     gap: 20px;
 

@@ -1,7 +1,6 @@
 /* Footer */
 .footer {
-    display: flex;
-    flex-direction: row;
+    @include applyFlex(row, false);
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -14,8 +13,7 @@
     }
 
     &__ul {
-        display: flex;
-        flex-direction: row;
+        @include applyFlex(row, false);
         justify-content: space-evenly;
         margin-top: 15px;
 
