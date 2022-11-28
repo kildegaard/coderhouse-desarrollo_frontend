@@ -1,16 +1,16 @@
 /* General */
 body {
     font-family: 'Titillium Web', sans-serif;
-    background-color: lightblue;
+    background-color: $color-primary;
     background-image: url('../assets/img/background-image.jpg');
     background-size: cover;
     background-repeat: repeat;
 }
 
 .btn-primary {
-    background-color: #E64E76;
+    background-color: $color-primary;
 }
 
 .btn-primary:hover {
-    background-color: #3958a6;
+    background-color: $color-secondary;
 }
