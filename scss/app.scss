@@ -9,8 +9,6 @@
 @import './layout/general.scss';
 @import './layout/header.scss';
 @import './layout/footer.scss';
-@import './layout/media-query.scss';
-
 
 // Views
 @import './views/index.scss';
@@ -18,3 +16,6 @@
 @import './views/suplementos.scss';
 @import './views/about-us.scss';
 @import './views/contacto.scss';
+
+// Media Query
+@import './layout/media-query.scss';

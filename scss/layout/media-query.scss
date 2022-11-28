@@ -16,7 +16,7 @@
     .section__title {
         font-size: 1.8em;
         letter-spacing: 0.3em;
-        color: #3958a6b3;
+        color: $color-primary;
     }
 
     .footer {
@@ -44,7 +44,7 @@
     .entrenador__texto {
         font-size: 0.8em;
         line-height: 0.9em;
-        color: antiquewhite;
+        color: $color-tertiary;
     }
 
     .contacto__items .container {
@@ -66,8 +66,8 @@
     .suplementos__hero__text,
     .contacto__datos,
     .disclaimer__text {
-        color: antiquewhite;
-        background-color: #3958a6b3;
+        color: $color-tertiary;
+        background-color: $color-primary;
         border-radius: 20px;
     }
 }

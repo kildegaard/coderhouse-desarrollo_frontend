@@ -10,11 +10,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border: 3px solid #3958a6;
+    border: 3px solid $color-primary--darker;
     border-radius: 20px;
 
-    background-color: rgba(57, 88, 166, 0.6);
-    color: antiquewhite;
+    background-color: $color-primary;
+    color: $color-tertiary;
 
     margin: 5px;
     padding: 10px;

@@ -10,10 +10,10 @@ body {
   background-repeat: repeat; }
 
 .btn-primary {
+  border-color: #E64E76cc;
   background-color: #3958a6cc; }
-
-.btn-primary:hover {
-  background-color: #E64E76cc; }
+  .btn-primary:hover {
+    background-color: #E64E76cc; }
 
 /* header */
 .navbarSupportedContent-custom {
@@ -21,10 +21,9 @@ body {
 
 .navbar {
   background-color: #3958a6cc; }
-
-.navbar-brand__icon {
-  height: 40px;
-  transform: rotate(45deg); }
+  .navbar-brand__icon {
+    height: 40px;
+    transform: rotate(45deg); }
 
 /* Footer */
 .footer {
@@ -35,65 +34,17 @@ body {
   text-align: center;
   background-color: #3958a6cc;
   font-family: 'Titillium Web', sans-serif; }
-
-.footer__rights {
-  font-style: italic;
-  margin: 0; }
-
-.footer__ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 15px; }
-  .footer__ul li {
-    list-style-type: none;
-    margin: 2px 10px; }
-
-/* Media Queries */
-@media screen and (max-width: 768px) {
-  .header .vr {
-    display: none; }
-  .hero__text {
-    display: none; }
-  .hero__img {
-    width: 300px;
-    margin-bottom: 0; }
-  .section__title {
-    font-size: 1.8em;
-    letter-spacing: 0.3em;
-    color: #3958a6b3; }
-  .footer {
-    display: none; }
-  .horarios__tabla table {
-    font-size: 0.45em; }
-  .horarios__aranceles .container {
+  .footer__rights {
+    font-style: italic;
+    margin: 0; }
+  .footer__ul {
     display: flex;
-    flex-direction: column;
-    align-items: center; }
-  .horarios__otrasopciones ul {
-    padding: 10px; }
-  .horarios__otrasopciones li {
-    font-size: 1.2em; }
-  .entrenador__texto {
-    font-size: 0.8em;
-    line-height: 0.9em;
-    color: antiquewhite; }
-  .contacto__items .container {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 50px; }
-  .contacto__iframe {
-    height: 300px;
-    width: 300px; }
-  #consulta-texto {
-    width: 300px; }
-  .suplementos__hero__text,
-  .contacto__datos,
-  .disclaimer__text {
-    color: antiquewhite;
-    background-color: #3958a6b3;
-    border-radius: 20px; } }
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 15px; }
+    .footer__ul li {
+      list-style-type: none;
+      margin: 2px 10px; }
 
 /* Index */
 .index__hero {
@@ -305,9 +256,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  border: 3px solid #3958a6;
+  border: 3px solid #2148accc;
   border-radius: 20px;
-  background-color: rgba(57, 88, 166, 0.6);
+  background-color: #3958a6cc;
   color: antiquewhite;
   margin: 5px;
   padding: 10px; }
@@ -358,3 +309,49 @@ body {
 .contacto__disclaimer {
   text-align: center;
   margin: 10px; }
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .header .vr {
+    display: none; }
+  .hero__text {
+    display: none; }
+  .hero__img {
+    width: 300px;
+    margin-bottom: 0; }
+  .section__title {
+    font-size: 1.8em;
+    letter-spacing: 0.3em;
+    color: #3958a6cc; }
+  .footer {
+    display: none; }
+  .horarios__tabla table {
+    font-size: 0.45em; }
+  .horarios__aranceles .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .horarios__otrasopciones ul {
+    padding: 10px; }
+  .horarios__otrasopciones li {
+    font-size: 1.2em; }
+  .entrenador__texto {
+    font-size: 0.8em;
+    line-height: 0.9em;
+    color: antiquewhite; }
+  .contacto__items .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px; }
+  .contacto__iframe {
+    height: 300px;
+    width: 300px; }
+  #consulta-texto {
+    width: 300px; }
+  .suplementos__hero__text,
+  .contacto__datos,
+  .disclaimer__text {
+    color: antiquewhite;
+    background-color: #3958a6cc;
+    border-radius: 20px; } }
