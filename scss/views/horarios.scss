@@ -1,0 +1,62 @@
+/* Horarios */
+.horarios__tabla table {
+    opacity: 0.9;
+    text-align: center;
+}
+
+
+.horarios__aranceles .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+/* Cards */
+.horarios__aranceles .container .card {
+    width: 250px;
+    background-color: $color-primary;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.horarios__aranceles .card__img {
+
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+}
+
+.horarios__aranceles .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horarios__aranceles .card-body .card-title {
+    font-weight: bold;
+}
+
+.horarios__aranceles .card-body .card-text {
+    text-align: center;
+}
+
+
+.horarios__otrasopciones li {
+    margin-bottom: 5px;
+    border: 1px solid $color-secondary;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    list-style-type: none;
+    list-style-position: inside;
+    transition: all 0.4s ease;
+
+    &:hover {
+        color: $color-tertiary;
+        background-color: $color-secondary;
+        transition: all 0.4s ease;
+    }
+}

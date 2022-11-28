@@ -1,0 +1,44 @@
+/* Index */
+.index__hero {
+    margin: 100px 0;
+    @include applyFlex(row, true);
+    text-align: center;
+}
+
+.hero__img {
+    max-height: 500px;
+    max-width: 500px;
+    border-radius: 50%;
+}
+
+.hero__text {
+    font-size: 3em;
+}
+
+.section__title {
+    font-size: 3em;
+    text-align: center;
+    margin: 20px;
+    letter-spacing: 0.8em;
+    border-top: 2px solid $color-primary;
+    border-bottom: 2px solid $color-primary;
+}
+
+.index__articles {
+    @include applyFlex(row, true);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.index-article {
+    max-width: 540px;
+
+    .card-title {
+        text-align: center;
+        text-decoration: underline;
+    }
+}
+
+.card-image-container {
+    @include applyFlex(row, true);
+}

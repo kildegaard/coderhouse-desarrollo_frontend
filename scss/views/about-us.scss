@@ -1,0 +1,70 @@
+/* About us */
+.aboutus__historia .container {
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    @include applyFlex(column, true);
+    gap: 20px;
+}
+
+.aboutus__entrenadores {
+    @include applyFlex(row, false);
+    // display: flex;
+    // flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 10%;
+}
+
+.aboutus__entrenador {
+    border: 1px solid $color-secondary;
+    border-radius: 20px;
+
+    @include applyFlex(row, true);
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    padding: 10px;
+
+    background-color: $color-primary;
+}
+
+.entrenador__img {
+    height: 150px;
+    padding: 5px;
+    border: 1px solid $color-secondary;
+    border-right: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    // background-color: rgba(230, 78, 118, 0.3);
+    background-color: $color-secondary;
+}
+
+.entrenador__datos {
+    padding: 0;
+
+    li {
+        list-style-type: none;
+        list-style-position: inside;
+    }
+}
+
+.entrenador__texto {
+    height: 150px;
+    border: 1px solid $color-secondary;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+
+    @include applyFlex(column, false);
+    // display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.entrenador__nombre {
+    text-align: center;
+}
