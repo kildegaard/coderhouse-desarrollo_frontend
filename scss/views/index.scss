@@ -1,8 +1,7 @@
 /* Index */
 .index__hero {
     margin: 100px 0;
-    justify-content: center;
-    align-items: center;
+    @include applyFlex(row, true);
     text-align: center;
 }
 
@@ -26,10 +25,9 @@
 }
 
 .index__articles {
-    display: flex;
+    @include applyFlex(row, true);
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    gap: 20px;
 }
 
 .index-article {
@@ -42,7 +40,5 @@
 }
 
 .card-image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include applyFlex(row, true);
 }

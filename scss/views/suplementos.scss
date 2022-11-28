@@ -9,13 +9,13 @@
     width: 100%;
     object-fit: cover;
     object-position: top;
-    background-color: #3958a6b3;
+    background-color: $color-primary;
     border-radius: 50px;
 }
 
 .suplementos__hero .carousel-item img {
     padding: 10px;
-    border: 5px solid #3958a6;
+    border: 5px solid $color-primary;
     border-radius: 50px;
 }
 
@@ -32,7 +32,7 @@
 /* Cards */
 .suplementos__productos .container .card {
     width: 250px;
-    background-color: #3958a6b3;
+    background-color: $color-primary;
     align-items: center;
 }
 
