@@ -47,8 +47,16 @@
         color: $color-tertiary;
     }
 
+    .suplementos__hero__text {
+        display: none;
+    }
+
     .contacto__form {
         border-radius: 0;
+    }
+
+    .contacto__datos {
+        padding: 0;
     }
 
     .contacto__items .container {
@@ -67,11 +75,10 @@
         width: 300px;
     }
 
-    .suplementos__hero__text,
     .contacto__datos,
     .disclaimer__text {
         color: $color-tertiary;
         background-color: $color-primary;
-        border-radius: 20px;
+        border-radius: 0;
     }
 }

@@ -351,8 +351,12 @@ textarea {
     font-size: 0.8em;
     line-height: 0.9em;
     color: antiquewhite; }
+  .suplementos__hero__text {
+    display: none; }
   .contacto__form {
     border-radius: 0; }
+  .contacto__datos {
+    padding: 0; }
   .contacto__items .container {
     flex-direction: column;
     justify-content: flex-start;
@@ -363,9 +367,8 @@ textarea {
     width: 300px; }
   #consulta-texto {
     width: 300px; }
-  .suplementos__hero__text,
   .contacto__datos,
   .disclaimer__text {
     color: antiquewhite;
     background-color: #3958a6cc;
-    border-radius: 20px; } }
+    border-radius: 0; } }
