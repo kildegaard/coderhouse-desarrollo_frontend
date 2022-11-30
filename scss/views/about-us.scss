@@ -7,6 +7,17 @@
     gap: 20px;
 }
 
+.card-img-container {
+    width: 100%;
+}
+
+.card-img {
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+
+}
+
 .aboutus__entrenadores {
     @include applyFlex(row, false);
     // display: flex;

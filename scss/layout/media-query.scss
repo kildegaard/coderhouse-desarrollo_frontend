@@ -1,4 +1,21 @@
 /* Media Queries */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .index__hero {
+        flex-direction: column;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .hero__img {
+        border-radius: 0;
+    }
+
+    .hero__text {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .header .vr {
         display: none;
