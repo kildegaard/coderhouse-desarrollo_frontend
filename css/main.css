@@ -89,7 +89,14 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  justify-content: center;
+  height: 300px; }
+  .card-image-container .card__img {
+    height: 100%;
+    padding: 5px;
+    object-fit: cover;
+    overflow: hidden; }
 
 /* Horarios */
 .horarios__tabla table {
@@ -340,20 +347,19 @@ textarea {
     flex-direction: column;
     margin-top: 0;
     margin-bottom: 0; }
-  .hero__img {
-    border-radius: 0; }
   .hero__text {
     width: 100%;
     margin: 20px 0; } }
 
 @media screen and (max-width: 768px) {
+  .index__hero {
+    margin: 10px auto; }
   .header .vr {
     display: none; }
   .hero__text {
     display: none; }
   .hero__img {
-    width: 300px;
-    margin-bottom: 0; }
+    width: 100%; }
   .section__title {
     font-size: 1.8em;
     letter-spacing: 0.3em;

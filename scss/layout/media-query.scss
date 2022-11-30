@@ -7,7 +7,7 @@
     }
 
     .hero__img {
-        border-radius: 0;
+        // border-radius: 0;
     }
 
     .hero__text {
@@ -17,6 +17,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    .index__hero {
+        margin: 10px auto;
+    }
+
     .header .vr {
         display: none;
     }
@@ -26,8 +30,7 @@
     }
 
     .hero__img {
-        width: 300px;
-        margin-bottom: 0;
+        width: 100%;
     }
 
     .section__title {
