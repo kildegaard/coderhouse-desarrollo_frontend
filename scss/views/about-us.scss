@@ -7,15 +7,19 @@
     gap: 20px;
 }
 
-.card-img-container {
-    width: 100%;
+.card-image-container {
+    flex-wrap: nowrap;
+}
+
+.card-image-container.aboutus {
+    height: auto;
+    padding: 10px 20px;
+    margin-left: 10px;
 }
 
 .card-img {
-    width: 100%;
-    object-fit: contain;
-    overflow: hidden;
-
+    height: 100%;
+    object-fit: cover;
 }
 
 .aboutus__entrenadores {
