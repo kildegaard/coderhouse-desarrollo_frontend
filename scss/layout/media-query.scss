@@ -21,6 +21,13 @@
         margin: 10px auto;
     }
 
+    .card-image-container.index img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
+    }
+
     .header .vr {
         display: none;
     }

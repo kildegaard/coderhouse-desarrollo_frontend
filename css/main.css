@@ -93,10 +93,14 @@ body {
   justify-content: center;
   height: 300px; }
   .card-image-container .card__img {
-    height: 100%;
+    height: 300px;
     padding: 5px;
-    object-fit: cover;
+    object-fit: contain;
     overflow: hidden; }
+
+.card-image-container.index {
+  height: auto;
+  padding: 10px 20px; }
 
 /* Horarios */
 .horarios__tabla table {
@@ -357,6 +361,11 @@ textarea {
 @media screen and (max-width: 768px) {
   .index__hero {
     margin: 10px auto; }
+  .card-image-container.index img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top; }
   .header .vr {
     display: none; }
   .hero__text {
