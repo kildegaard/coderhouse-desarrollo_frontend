@@ -43,7 +43,7 @@
     .section__title {
         font-size: 1.8em;
         letter-spacing: 0.3em;
-        color: $color-primary;
+        color: $color-tertiary;
     }
 
     .footer {
@@ -108,5 +108,24 @@
         color: $color-tertiary;
         background-color: $color-primary;
         border-radius: 0;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hero__img {
+        width: 500px;
+        border-radius: 50%;
+    }
+
+    .hero__text {
+        // color: $color-tertiary;
+        font-size: 3em;
+        // font-weight: bold;
+
+        small {
+            // font-weight: normal;
+            font-size: 0.6em;
+            opacity: 0.8;
+        }
     }
 }

@@ -3,7 +3,7 @@
 
     margin: auto 0;
     height: 95vh;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     @include applyFlex(row, true);
     text-align: center;
     background-image: url('../../assets/img/hero_back.png');
@@ -11,7 +11,7 @@
 }
 
 .hero__img {
-    width: 20em;
+    width: 400px;
     border-radius: 50%;
 }
 
@@ -28,10 +28,12 @@
 }
 
 .section__title {
+    background-color: $color-primary;
+    color: $color-tertiary;
     font-size: 3em;
     text-align: center;
-    margin: 20px;
-    letter-spacing: 0.8em;
+    margin: 10px auto;
+    letter-spacing: 0.2em;
     border-top: 2px solid $color-primary;
     border-bottom: 2px solid $color-primary;
 }

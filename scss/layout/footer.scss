@@ -1,6 +1,7 @@
 /* Footer */
 .footer {
     @include applyFlex(row, false);
+    color: $color-tertiary;
     justify-content: space-between;
     align-items: center;
     text-align: center;
