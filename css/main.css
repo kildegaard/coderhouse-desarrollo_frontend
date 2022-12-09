@@ -92,7 +92,13 @@ body {
   max-width: 540px; }
   .index-article .card-title {
     text-align: center;
-    text-decoration: underline; }
+    font-weight: bold;
+    border-bottom: 1px solid #E64E76cc; }
+  .index-article .card-text {
+    text-indent: 30px;
+    text-align: justify;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word; }
 
 .card-image-container {
   display: flex;
