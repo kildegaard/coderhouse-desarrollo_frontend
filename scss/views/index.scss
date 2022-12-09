@@ -1,17 +1,30 @@
 /* Index */
 .index__hero {
-    margin: 100px 0;
+
+    margin: auto 0;
+    height: 95vh;
+    margin-bottom: 150px;
     @include applyFlex(row, true);
     text-align: center;
+    background-image: url('../../assets/img/hero_back.png');
+
 }
 
 .hero__img {
-    width: 40%;
+    width: 20em;
     border-radius: 50%;
 }
 
 .hero__text {
+    color: $color-tertiary;
     font-size: 2.5em;
+    font-weight: bold;
+
+    small {
+        font-weight: normal;
+        font-size: 0.5em;
+        opacity: 0.8;
+    }
 }
 
 .section__title {
