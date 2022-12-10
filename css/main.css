@@ -101,7 +101,9 @@ body {
   gap: 20px; }
 
 .index-article {
-  max-width: 540px; }
+  max-width: 540px;
+  justify-content: center;
+  align-items: center; }
   .index-article .card-title {
     text-align: center;
     font-weight: bold;
@@ -122,12 +124,13 @@ body {
   .card-image-container .card__img {
     height: 300px;
     padding: 5px;
-    object-fit: contain;
+    object-fit: cover;
     overflow: hidden; }
 
 .card-image-container.index {
   height: auto;
-  padding: 10px 20px; }
+  padding: 10px 20px;
+  max-width: 290px; }
 
 /* Horarios */
 .horarios__tabla table {
@@ -233,9 +236,10 @@ body {
 /* About us */
 .aboutus__historia .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px; }
 
 .card-image-container {
