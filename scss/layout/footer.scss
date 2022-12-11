@@ -2,6 +2,7 @@
 .footer {
     @include applyFlex(row, false);
     color: $color-tertiary;
+    margin-top: 20px;
     justify-content: space-between;
     align-items: center;
     text-align: center;

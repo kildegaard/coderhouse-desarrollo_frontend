@@ -99,7 +99,13 @@
         width: 300px;
     }
 
-    #consulta-texto {
+    .contacto__iframe-datos,
+    .contacto__form {
+        width: 320px;
+        margin: auto 0;
+    }
+
+    .contacto__iframe-datos .contacto__datos #consulta-texto {
         width: 300px;
     }
 

@@ -27,6 +27,7 @@ body {
   display: flex;
   flex-direction: row;
   color: antiquewhite;
+  margin-top: 20px;
   justify-content: space-between;
   align-items: center;
   text-align: center;
@@ -88,6 +89,7 @@ body {
   font-size: 3em;
   text-align: center;
   margin: 10px auto;
+  margin-bottom: 20px;
   letter-spacing: 0.2em;
   border-top: 2px solid #3958a6cc;
   border-bottom: 2px solid #3958a6cc; }
@@ -242,6 +244,9 @@ body {
   flex-wrap: wrap;
   gap: 20px; }
 
+.card {
+  margin-bottom: 0 !important; }
+
 .card-image-container {
   flex-wrap: nowrap; }
 
@@ -372,8 +377,7 @@ textarea {
 
 .contacto__iframe-datos .section__title {
   font-size: 2em;
-  font-weight: bold;
-  letter-spacing: 0.5em; }
+  font-weight: bold; }
 
 .contacto__disclaimer {
   text-align: center;
@@ -437,7 +441,11 @@ textarea {
   .contacto__iframe {
     height: 300px;
     width: 300px; }
-  #consulta-texto {
+  .contacto__iframe-datos,
+  .contacto__form {
+    width: 320px;
+    margin: auto 0; }
+  .contacto__iframe-datos .contacto__datos #consulta-texto {
     width: 300px; }
   .contacto__datos,
   .disclaimer__text {

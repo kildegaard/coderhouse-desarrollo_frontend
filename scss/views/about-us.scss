@@ -8,6 +8,10 @@
     gap: 20px;
 }
 
+.card {
+    margin-bottom: 0 !important; // Fue necesario agregarle el !important puesto que necesitaba sobreescribir la de bootstrap que ya venía con !important...
+}
+
 .card-image-container {
     flex-wrap: nowrap;
 }
