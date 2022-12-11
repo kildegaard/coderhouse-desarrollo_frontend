@@ -12,6 +12,17 @@ body {
   .btn-primary:hover {
     background-color: #E64E76cc; }
 
+.card {
+  box-shadow: 0 0 5px 2px #3958a6cc;
+  transition: all 0.4s ease; }
+  .card:hover {
+    box-shadow: 0 0 5px 2px #E64E76cc;
+    transform: scale(1.025);
+    transition: all 0.4s ease; }
+
+.aboutus__historia .container:hover > :not(:hover) {
+  opacity: 0.6; }
+
 /* header */
 .navbarSupportedContent-custom {
   text-align: center; }
@@ -413,8 +424,11 @@ textarea {
     color: antiquewhite; }
   .footer {
     display: none; }
+  .horarios__tabla .container {
+    padding: 0; }
   .horarios__tabla table {
-    font-size: 0.45em; }
+    font-size: 0.45em;
+    padding: 0; }
   .horarios__aranceles .container {
     display: flex;
     flex-direction: column;

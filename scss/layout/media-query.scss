@@ -50,8 +50,15 @@
         display: none;
     }
 
-    .horarios__tabla table {
-        font-size: 0.45em;
+    .horarios__tabla {
+        .container {
+            padding: 0;
+        }
+
+        table {
+            font-size: 0.45em;
+            padding: 0;
+        }
     }
 
     .horarios__aranceles .container {
