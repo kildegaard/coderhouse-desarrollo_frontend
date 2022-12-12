@@ -84,7 +84,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url("../../assets/img/hero_back.png"); }
+  background-image: url("../assets/img/hero_back.png"); }
 
 .hero__img {
   width: 400px;
