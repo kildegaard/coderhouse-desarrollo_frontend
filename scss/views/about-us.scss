@@ -1,4 +1,9 @@
 /* About us */
+
+.aboutus__carousel .carousel-item img {
+    aspect-ratio: 16 / 9;
+}
+
 .aboutus__historia .container {
     // display: flex;
     // flex-direction: column;

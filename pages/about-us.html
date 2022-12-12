@@ -71,9 +71,9 @@
         <!-- Nuestras Instalaciones -->
         <section class="suplementos__hero">
 
-            <h2 class="section__title">Nuestras instalaciones</h2>
+            <h2 id="nuestras-instalaciones" class="section__title">Nuestras instalaciones</h2>
 
-            <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="true">
+            <div id="carouselExampleIndicators" class="aboutus__carousel carousel slide container" data-bs-ride="true">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -84,11 +84,11 @@
                 </div>
 
                 <div class="carousel-inner">
-                    <div class="carousel-item">
+                    <div class="carousel-item active">
                         <img src="../assets/img/instalaciones/instalaciones-1.jpeg" class="d-block w-100"
                             alt="Imagen de carrusel 1">
                     </div>
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <img src="../assets/img/instalaciones/instalaciones-2.jpg" class="d-block w-100"
                             alt="Imagen de carrusel 2">
                     </div>
@@ -277,6 +277,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
+    <!-- Pequeño script para scrollear al carrusel -->
+    <script>document.getElementById('nuestras-instalaciones').scrollIntoView(true);</script>
 </body>
 
 </html>

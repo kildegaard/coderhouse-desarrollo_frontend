@@ -32,3 +32,11 @@ body {
         opacity: 0.6;
     }
 }
+
+.carousel-indicators button {
+    background-color: $color-tertiary !important;
+
+    &.active {
+        background-color: $color-secondary !important;
+    }
+}

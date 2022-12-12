@@ -23,6 +23,11 @@ body {
 .aboutus__historia .container:hover > :not(:hover) {
   opacity: 0.6; }
 
+.carousel-indicators button {
+  background-color: antiquewhite !important; }
+  .carousel-indicators button.active {
+    background-color: #E64E76cc !important; }
+
 /* header */
 .navbarSupportedContent-custom {
   text-align: center; }
@@ -272,6 +277,9 @@ body {
     padding: 5px; }
 
 /* About us */
+.aboutus__carousel .carousel-item img {
+  aspect-ratio: 16 / 9; }
+
 .aboutus__historia .container {
   display: flex;
   flex-direction: row;
