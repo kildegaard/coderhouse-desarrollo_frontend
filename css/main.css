@@ -224,27 +224,45 @@ body {
 
 /* Cards */
 .suplementos__productos .container .card {
+  height: 400px;
   width: 250px;
   background-color: #3958a6cc;
   align-items: center; }
 
 .suplementos__productos .card__img {
   border-radius: 25px;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   margin: 15px; }
 
 .suplementos__productos .card-body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  justify-content: space-between; }
 
 .suplementos__productos .card-body .card-title {
   font-weight: bold; }
 
 .suplementos__productos .card-body .card-text {
-  text-align: center; }
+  overflow-wrap: break-word;
+  min-width: 0; }
+
+.price__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 30px;
+  align-items: center; }
+  .price__button .price {
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: antiquewhite;
+    border: 2px solid #E64E76cc;
+    border-radius: 20px;
+    padding: 5px; }
 
 /* About us */
 .aboutus__historia .container {

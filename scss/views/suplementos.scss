@@ -32,6 +32,7 @@
 
 /* Cards */
 .suplementos__productos .container .card {
+    height: 400px;
     width: 250px;
     background-color: $color-primary;
     align-items: center;
@@ -39,16 +40,14 @@
 
 .suplementos__productos .card__img {
     border-radius: 25px;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     margin: 15px;
 }
 
 .suplementos__productos .card-body {
-    @include applyFlex(column, center);
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
+    @include applyFlex(column, true);
+    justify-content: space-between;
 }
 
 .suplementos__productos .card-body .card-title {
@@ -56,5 +55,23 @@
 }
 
 .suplementos__productos .card-body .card-text {
-    text-align: center;
+    overflow-wrap: break-word;
+    min-width: 0;
+}
+
+.price__button {
+    @include applyFlex(row, false);
+    justify-content: space-evenly;
+    gap: 30px;
+    align-items: center;
+
+    .price {
+        margin: 0;
+        font-size: 25px;
+        font-weight: bold;
+        color: $color-tertiary;
+        border: 2px solid $color-secondary;
+        border-radius: 20px;
+        padding: 5px;
+    }
 }
