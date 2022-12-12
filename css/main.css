@@ -240,14 +240,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 5px 15px; }
 
 .suplementos__productos .card-body .card-title {
-  font-weight: bold; }
+  font-weight: bold;
+  text-align: center;
+  color: antiquewhite;
+  border-top: 2px solid #E64E76cc;
+  border-bottom: 2px solid #E64E76cc; }
 
 .suplementos__productos .card-body .card-text {
   overflow-wrap: break-word;
-  min-width: 0; }
+  min-width: 0;
+  color: antiquewhite;
+  text-align: center; }
 
 .price__button {
   display: flex;

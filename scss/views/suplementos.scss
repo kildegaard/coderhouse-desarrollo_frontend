@@ -48,15 +48,22 @@
 .suplementos__productos .card-body {
     @include applyFlex(column, true);
     justify-content: space-between;
+    padding: 5px 15px;
 }
 
 .suplementos__productos .card-body .card-title {
     font-weight: bold;
+    text-align: center;
+    color: $color-tertiary;
+    border-top: 2px solid $color-secondary;
+    border-bottom: 2px solid $color-secondary;
 }
 
 .suplementos__productos .card-body .card-text {
     overflow-wrap: break-word;
     min-width: 0;
+    color: $color-tertiary;
+    text-align: center;
 }
 
 .price__button {
