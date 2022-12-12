@@ -216,7 +216,8 @@ body {
 .suplementos__hero .carousel-item img {
   padding: 10px;
   border: 5px solid #3958a6cc;
-  border-radius: 50px; }
+  border-radius: 50px;
+  aspect-ratio: 16 / 6; }
 
 .suplementos__productos .container {
   display: flex;
@@ -308,17 +309,21 @@ body {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
-  margin: 0 10%; }
+  margin: 20px auto; }
 
 .aboutus__entrenador {
   border: 1px solid #E64E76cc;
   border-radius: 20px;
+  width: 440px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  justify-content: space-between;
   padding: 10px;
   background-color: #3958a6cc; }
+  .aboutus__entrenador.card {
+    min-height: auto; }
 
 .entrenador__img {
   height: 150px;
@@ -327,27 +332,34 @@ body {
   border-right: none;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  background-color: #E64E76cc; }
+  background-color: antiquewhite;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: top; }
 
 .entrenador__datos {
-  padding: 0; }
+  padding: 0;
+  color: antiquewhite; }
   .entrenador__datos li {
     list-style-type: none;
     list-style-position: inside; }
 
 .entrenador__texto {
   height: 150px;
+  width: 100%;
   border: 1px solid #E64E76cc;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center; }
 
 .entrenador__nombre {
-  text-align: center; }
+  text-align: center;
+  font-weight: bold;
+  color: antiquewhite;
+  border-bottom: 2px solid #E64E76cc; }
 
 /* Contacto */
 .contacto__items .container {
@@ -470,6 +482,8 @@ textarea {
     padding: 10px; }
   .horarios__otrasopciones li {
     font-size: 1.2em; }
+  .aboutus__entrenador {
+    width: auto; }
   .entrenador__texto {
     font-size: 0.8em;
     line-height: 0.9em;
