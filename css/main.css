@@ -126,6 +126,8 @@ body {
     text-align: center;
     font-weight: bold;
     border-bottom: 1px solid #E64E76cc; }
+  .index-article .row.container {
+    justify-content: center; }
   .index-article .card-text {
     text-indent: 30px;
     text-align: justify;

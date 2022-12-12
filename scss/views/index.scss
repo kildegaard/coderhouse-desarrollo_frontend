@@ -70,6 +70,10 @@
         border-bottom: 1px solid $color-secondary; // text-decoration: underline;
     }
 
+    .row.container {
+        justify-content: center;
+    }
+
     .card-text {
         text-indent: 30px;
         text-align: justify;
